@@ -3,6 +3,8 @@ import pytest
 @pytest.fixture
 def setUp():
     print("setUp started")
+    yield
+    print("exited")
 
 
 def test_addItemtoCart(setUp):
